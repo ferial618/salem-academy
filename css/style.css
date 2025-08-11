@@ -54,6 +54,20 @@
 .contact-form .form-group {
   margin-bottom: 15px;
 }
+.contact-form select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form select:focus {
+  border-color: #ff7eb3;
+  box-shadow: 0 0 8px rgba(255,126,179,0.5);
+}
+
 
 .contact-form input,
 .contact-form textarea {
