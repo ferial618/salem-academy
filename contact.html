@@ -6,71 +6,101 @@
     <title>Contact Us - Salem Academy</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
-    <link rel="shortcut icon" href="./img/logo salem academy.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./img/logo salem academy.png"
+      type="image/x-icon"
+    />
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
-<body>
+  <body>
     <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-color-blue fixed-top">
-    <div class="container">
-      <a class="navbar-brand salem-text" href="index.html">Salem Academy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color-blue fixed-top">
+      <div class="container">
+        <a class="navbar-brand salem-text" href="index.html">Salem Academy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-<!-- Contact Form -->
-<section class="contact-section">
-  <div class="contact-container">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/xjkojpno" method="POST" class="contact-form">
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Age" required>
-      </div>
-     <div class="form-group">
-  <select name="courseType" required>
-    <option value="">Select Course Type</option>
-    <option value="python">Python Basics</option>
-    <option value="python-advanced">Python Advanced</option>
-    <option value="web-development">Web Development</option>
-    <option value="scratch">Scratch for Kids</option>
-  </select>
-</div>
+    <!-- Contact Form -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form
+          action="https://formspree.io/f/xjkojpno"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Age" required />
+          </div>
+          <div class="form-group">
+            <select name="courseType" required>
+              <option value="">Select Course Type</option>
+              <option value="python">Python Basics</option>
+              <option value="python-advanced">Python Advanced</option>
+              <option value="web-development">Web Development</option>
+              <option value="scratch">Scratch for Kids</option>
+            </select>
+          </div>
 
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Phone" required>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Phone" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="_replyto"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-      <div class="form-group">
-        <input type="email" name="_replyto" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <textarea name="message" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
+    </section>
 
-<footer class="bg-color-blue text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 Salem Academy. All Rights Reserved.</p>
-</footer>
+    <footer class="bg-color-blue text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 Salem Academy. All Rights Reserved.</p>
+    </footer>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
