@@ -34,7 +34,8 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -45,9 +46,42 @@
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="courses.html">Courses</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="coursesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                  <li><a class="dropdown-item" href="courses.html">All</a></li>
+                  <li>
+                    <a class="dropdown-item" href="courses.html#python"
+                      >Python</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="courses.html#frontend"
+                      >Frontend</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="courses.html#python-advanced"
+                      >Python Advanced</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="courses.html#scratch"
+                      >Scratch</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
               </li>
@@ -329,7 +363,8 @@
               <a href="#" class="text-white me-3"
                 ><i class="bi bi-twitter"></i
               ></a>
-              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
