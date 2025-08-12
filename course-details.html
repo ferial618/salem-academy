@@ -16,20 +16,78 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <style>
-      .course-img {
-        max-height: 250px;
-        object-fit: cover;
-      }
-    </style>
   </head>
   <body class="bg-light">
-    <header class="py-5 color-section text-center">
+
+    <!-- header  -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-color-blue fixed-top">
+        <div class="container">
+          <a class="navbar-brand salem-text" href="#">Salem Academy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+            <!-- NAVBAR (put inside your navbar ul) -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Courses
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+    <li><a class="dropdown-item" href="courses.html">All</a></li>
+    <li><a class="dropdown-item" href="courses.html#python">Python</a></li>
+    <li><a class="dropdown-item" href="courses.html#web-development">Web Development</a></li>
+    <li><a class="dropdown-item" href="courses.html#python-advanced">Python Advanced</a></li>
+    <li><a class="dropdown-item" href="courses.html#scratch">Scratch</a></li>
+
+    <li><hr class="dropdown-divider"></li>
+
+    <!-- Submenu -->
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="#" id="detailsSubToggle">Details</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="course-details.html#python">Python Details</a></li>
+        <li><a class="dropdown-item" href="course-details.html#web-development">Web Development Details</a></li>
+        <li><a class="dropdown-item" href="course-details.html#scratch">Python Advanced Details</a></li>
+        <li><a class="dropdown-item" href="course-details.html#scratch">Scratch Details</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="py-5 color-section text-center" style="margin-top: 60px;">
       <div class="container">
         <h1 class="salem-text">Course Details</h1>
         <p>Learn more about our featured courses</p>
       </div>
-    </header>
+    </div>
     <div class="container py-5">
       <!-- Python Basics -->
       <div class="row mb-5">
@@ -80,6 +138,7 @@
             src="./img/scartch-img.png"
             alt="Scratch for Kids"
             class="img-fluid rounded shadow course-img"
+            width="350px"
           />
         </div>
         <div class="col-md-8">
@@ -93,6 +152,29 @@
           <a href="contact.html" class="btn btn-success">Enroll Now</a>
         </div>
       </div>
+      <!-- Advanced Python  -->
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <img
+            src="./img/advanced-python.jpg"
+            alt="advanced-python"
+            class="img-fluid rounded shadow course-img"
+            width="350px"
+          />
+        </div>
+       <div class="col-md-8">
+  <h2 id="advanced-python">Advanced Python</h2>
+  <p><strong>Age:</strong> 14+ | <strong>Price:</strong> $70</p>
+  <p>
+    This course dives deeper into Python programming concepts. You will learn
+    about object-oriented programming (OOP), file handling, advanced data
+    structures, modules, and best practices for building scalable applications.
+  </p>
+  <a href="contact.html" class="btn btn-success">Enroll Now</a>
+</div>
+
+      </div>
+    </div>
     </div>
 
     <footer class="bg-color-blue text-white text-center py-3">
